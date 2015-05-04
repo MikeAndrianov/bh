@@ -5,7 +5,6 @@ Bh.SignOutRoute = Ember.Route.extend({
       type: 'DELETE',
       success: function(result) {
         location.reload();
-        console.log(result);
       }
     });
     this.transitionTo('/');
