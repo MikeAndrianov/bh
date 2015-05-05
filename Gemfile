@@ -32,8 +32,8 @@ gem 'ember-rails'
 gem 'ember-source'
 gem 'ember-data-source'
 
-gem 'bootstrap-sass'
 gem 'rolify'
+gem 'bootstrap-sass', '~> 3.3'
 
 gem 'active_model_serializers'
 
