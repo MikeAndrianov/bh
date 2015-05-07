@@ -1,4 +1,7 @@
-FactoryGirl.define do
+FactoryGirl.define do  factory :role do
+    
+  end
+
   #
   #  Sequences
   #
@@ -30,11 +33,17 @@ FactoryGirl.define do
     email { generate :email }
     password "secret1234"
     password_confirmation "secret1234"
+    
+    before(:create) { |user| user.add_role(:manager) }
   end
 
   factory :company do
     name { generate :name }
   end
+
+  factory :manager_role, class: Role do
+    name "manager"
+  end  
 
 
 end

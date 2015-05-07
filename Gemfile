@@ -33,6 +33,7 @@ gem 'ember-source'
 gem 'ember-data-source'
 
 gem 'bootstrap-sass'
+gem 'rolify'
 
 gem 'active_model_serializers'
 
