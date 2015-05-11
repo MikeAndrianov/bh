@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery
 //= require handlebars
 //= require ember
@@ -21,6 +20,8 @@
 //= require bh
 
 // for more details see: http://emberjs.com/guides/application/
-Bh = Ember.Application.create();
+Bh = Ember.Application.create({
+  LOG_TRANSITIONS: true
+});
 
 //= require_tree .
