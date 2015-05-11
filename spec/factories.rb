@@ -1,4 +1,7 @@
-FactoryGirl.define do  factory :role do
+FactoryGirl.define do  factory :bottle do
+    status "MyString"
+  end
+  factory :role do
     
   end
 

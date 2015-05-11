@@ -3,7 +3,7 @@
   {{outlet}}
 </div>
 {{#if signedIn}}
-  {{#link-to 'sign_out'}}Sign Out{{/link-to}}
+  {{#link-to 'sign_out' class='btn btn-danger'}}Sign Out{{/link-to}}
 {{else}}
-  {{#link-to 'sign_in'}}Sign In{{/link-to}}
+  {{#link-to 'sign_in' class='btn btn-success'}}Sign In{{/link-to}}
 {{/if}}
