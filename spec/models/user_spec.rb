@@ -15,7 +15,7 @@ describe User, type: :model do
       # expect(company).to be_valid
     end
 
-    it 'is invalid without name' do
+    it 'invalid without name' do
       # company = build(:company, name: '')
       # expect(company.save).to eq(false)
     end

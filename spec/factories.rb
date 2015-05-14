@@ -1,10 +1,4 @@
-FactoryGirl.define do  factory :bottle do
-    status "MyString"
-  end
-  factory :role do
-    
-  end
-
+FactoryGirl.define do  
   #
   #  Sequences
   #
@@ -46,7 +40,10 @@ FactoryGirl.define do  factory :bottle do
 
   factory :manager_role, class: Role do
     name "manager"
-  end  
+  end 
 
+  factory :bottle do
+    status "available"
+  end   
 
 end
