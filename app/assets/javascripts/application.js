@@ -23,5 +23,6 @@
 Bh = Ember.Application.create({
   LOG_TRANSITIONS: true
 });
+Bh.ApplicationAdapter = DS.RESTAdapter.extend();
 
 //= require_tree .
