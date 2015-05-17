@@ -33,7 +33,7 @@ gem 'ember-source'
 gem 'ember-data-source'
 
 gem 'rolify'
-gem 'bootstrap-sass', '~> 3.3'
+gem 'bootstrap-sass'
 
 gem 'active_model_serializers'
 
@@ -46,7 +46,7 @@ group :development, :test do
   gem 'ruby_gntp'
 
   gem 'database_cleaner'
-  gem 'factory_girl_rails'  
+  gem 'factory_girl_rails'
 end
 
 # Use ActiveModel has_secure_password

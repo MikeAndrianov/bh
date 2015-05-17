@@ -1,55 +1,51 @@
-  <div class="outer">
-  	  <nav class="navbar navbar-inverse opacity navbar-fixed-top" role="navigation">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          {{#link-to 'application' class='navbar-brand'}}Bottle Hunter{{/link-to}}
-	    </div>
+<div class="outer">
+  <nav class="navbar navbar-inverse opacity navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        {{#link-to 'application' class='navbar-brand'}}Bottle Hunter{{/link-to}}
+      </div>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class="active">{{#link-to 'about'}}About{{/link-to}}</li>
-	        <li>{{#link-to 'about'}}About{{/link-to}}</li>
-	        <li>{{#link-to 'about'}}About{{/link-to}}</li>
-	      </ul>
-	      
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-        <div class="middle row">
-	        <div class="col-sm-3 col-md-4"></div>
-	        <div class="inner opacity marg col-xs-12 col-sm-6 col-md-4">
-	            <div class="row">
-	                <h1>Bottle Hunter</h1>
-	                <h4>Welcom Bottle Hunter project!</h4>
-	            </div>
-	            <br>
-	            <div class="row">
-	            	<div class="col-xs-12 col-sm-6 col-md-6 marg">
-	            		{{#link-to 'about' class='btn btn-default'}}Find Out More{{/link-to}}
-	            	</div>
-	            	<div class="col-xs-12 col-sm-6 col-md-6 marg">
-	            		{{#if signedIn}}
-						  {{#link-to 'sign_out' class='btn btn-danger'}}Sign Out{{/link-to}}
-						{{else}}
-						  {{#link-to 'sign_in' class='btn btn-success'}}Sign In{{/link-to}}
-						{{/if}}
-	            	</div>
-	            </div>
-	        </div>
-	        <div class="col-sm-3 col-md-4"></div>
-	        <div class="opacity marg col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
-	        	
-					{{outlet}}
-	        	
-	        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active">{{#link-to 'about'}}About{{/link-to}}</li>
+          <li>{{#link-to 'about'}}About{{/link-to}}</li>
+          <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="middle row">
+    <div class="col-sm-3 col-md-4"></div>
+    <div class="inner opacity marg col-xs-12 col-sm-6 col-md-4">
+      <div class="row">
+        <h1>Bottle Hunter</h1>
+        <h4>Welcome Bottle Hunter project!</h4>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 marg">
+          {{#link-to 'about' class='btn btn-default'}}Find Out More{{/link-to}}
         </div>
-
+        <div class="col-xs-12 col-sm-6 col-md-6 marg">
+          {{#if signedIn}}
+            {{#link-to 'sign_out' class='btn btn-danger'}}Sign Out{{/link-to}}
+          {{else}}
+            {{#link-to 'sign_in' class='btn btn-success'}}Sign In{{/link-to}}
+          {{/if}}
+        </div>
+      </div>
     </div>
+    <div class="col-sm-3 col-md-4"></div>
+    <div class="opacity marg col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+      {{outlet}}
+    </div>
+  </div>
+</div>
