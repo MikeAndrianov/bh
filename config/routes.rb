@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :posts
+  resources :companies
 
   devise_for :users, controllers: { sessions: 'json_sessions' }
 

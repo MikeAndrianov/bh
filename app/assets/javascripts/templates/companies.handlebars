@@ -1,0 +1,8 @@
+<h2>Companies</h2>
+<ul>
+  {{#each}}
+    <li>{{#link-to 'company' this}}{{name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
