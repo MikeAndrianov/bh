@@ -254,7 +254,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
-  bootstrap-sass (~> 3.3)
+  bootstrap-sass
   coffee-rails (~> 4.0.0)
   database_cleaner
   devise

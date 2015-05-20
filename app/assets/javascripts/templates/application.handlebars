@@ -1,4 +1,4 @@
-<div class="outer">
+<div class="outer container">
   <nav class="navbar navbar-inverse opacity navbar-fixed-top" role="navigation">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -24,17 +24,17 @@
   </nav>
   <div class="middle row">
     <div class="col-sm-3 col-md-4"></div>
-    <div class="inner opacity marg col-xs-12 col-sm-6 col-md-4">
+    <div class="inner opacity vertical-margin col-xs-12 col-sm-6 col-md-4">
       <div class="row">
         <h1>Bottle Hunter</h1>
         <h4>Welcome Bottle Hunter project!</h4>
       </div>
       <br>
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 marg">
+        <div class="col-xs-12 col-sm-6 col-md-6 vertical-margin">
           {{#link-to 'about' class='btn btn-default'}}Find Out More{{/link-to}}
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 marg">
+        <div class="col-xs-12 col-sm-6 col-md-6 vertical-margin">
           {{#if signedIn}}
             {{#link-to 'sign_out' class='btn btn-danger'}}Sign Out{{/link-to}}
           {{else}}
@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="col-sm-3 col-md-4"></div>
-    <div class="opacity marg col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+    <div class="opacity vertical-margin col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
       {{outlet}}
     </div>
   </div>
