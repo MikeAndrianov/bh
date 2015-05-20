@@ -1,10 +1,10 @@
 // http://emberjs.com/guides/models/using-the-store/
 
 Bh.Store = DS.Store.extend({
-  // Override the default adapter with the `DS.ActiveModelAdapter` which
-  // is built to work nicely with the ActiveModel::Serializers gem.
-  adapter: '_ams'
+  revision: 12,
 });
+
+Bh.Adapter = DS.RESTAdapter.extend({ });
 
 $(function() {
     var token = $('meta[name="csrf-token"]').attr('content');

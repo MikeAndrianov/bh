@@ -30,7 +30,7 @@ gem 'devise'
 
 gem 'ember-rails'
 gem 'ember-source'
-gem 'ember-data-source'
+gem 'handlebars-source'
 
 gem 'bootstrap-sass'
 gem 'rolify'

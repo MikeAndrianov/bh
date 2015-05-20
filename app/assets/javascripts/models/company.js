@@ -1,4 +1,4 @@
 Bh.Company = DS.Model.extend({
-  title: DS.attr('string'),
+  name: DS.attr('string'),
   description: DS.attr('string')
 });
