@@ -6,7 +6,9 @@ Bh.Router.map(function() {
   });
 
   this.resource('companies', function(){
-    this.resource('company', { path: '/:company_id'});
+    this.resource('company', { path: '/:company_id'}, function(){
+      this.route('edit');
+    });
   });
   
   this.resource('post', {path: 'post/:post_id'}, function() {

@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-c = Company.create(name: "Pepsi", description: "Pepsi is a carbonated soft drink that is produced ...")
+c = Company.create(name: "Pepsi", description: "Pepsi is a carbonated soft drink that is produced and manufactured by PepsiCo. Created and developed in 1893 and introduced as Brad's Drink, it was renamed as Pepsi-Cola on August 28, 1898.")
 
 m = User.new(name: 'John_manager', password: 'password1', password_confirmation: 'password1')
 m.add_role 'manager'

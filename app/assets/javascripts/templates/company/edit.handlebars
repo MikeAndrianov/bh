@@ -1,0 +1,6 @@
+<h2>Edit Company</h2>
+<form>
+  <p>Title:<br/> {{input valueBinding='name'}}</p>
+  <p>Body:<br/>  {{textarea valueBinding='description'}}</p>
+  <p><button {{action "updateCompany"}}>Update</button></p>
+</form>

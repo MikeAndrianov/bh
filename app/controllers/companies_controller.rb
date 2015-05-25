@@ -1,5 +1,6 @@
 class CompaniesController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
+
   def index
     @companies = Company.all
 
@@ -14,12 +15,25 @@ class CompaniesController < ApplicationController
 
     respond_to do |format|
       if @company.save
-        format.html { redirect_to @company, notice: 'company was successfully created.' }
         format.json { render json: @company }
       else
-        format.html { render action: 'new' }
         format.json { render json: @company.errors, status: :unprocessable_entity }
       end
     end
   end
+
+  def update
+    company = Company.find(params[:id])
+    if company.update(company_params)
+      render json: company, status: 200
+    else
+      render json: company.errors, status: 422
+    end
+  end
+
+  private
+  
+  def company_params
+    params.require(:company).permit! #(:title, :description)
+  end 
 end
