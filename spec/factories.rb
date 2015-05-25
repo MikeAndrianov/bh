@@ -1,4 +1,9 @@
-FactoryGirl.define do  
+FactoryGirl.define do  factory :quest do
+    name "MyString"
+description "MyString"
+progres 1
+  end
+  
   #
   #  Sequences
   #

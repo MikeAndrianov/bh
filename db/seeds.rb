@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+c = Company.create(name: "Pepsi", description: "Pepsi is a carbonated soft drink that is produced ...")
+
+m = User.new(name: 'John_manager', password: 'password1', password_confirmation: 'password1')
+m.add_role 'manager'
+m.company = c
+m.save
+
