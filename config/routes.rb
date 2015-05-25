@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :companies
 
-  devise_for :users, controllers: { sessions: 'json_sessions' }
+  devise_for :users, controllers: { sessions: 'json_sessions', omniauth_callbacks: 'omniauth_callbacks' }
 
   root 'assets#index'
 
