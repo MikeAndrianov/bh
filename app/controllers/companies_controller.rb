@@ -5,8 +5,7 @@ class CompaniesController < ApplicationController
     @companies = Company.all
 
     respond_to do |format|
-      format.html { render html: @companies }
-      format.json { render json: @companies }
+      format.json { render json: @companies, includes: ['quests'] }
     end
   end
 
