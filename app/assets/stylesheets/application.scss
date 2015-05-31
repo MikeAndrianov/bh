@@ -1,5 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "main_page";
+@import "about";
+@import "companies";
+@import "sign_in";
 /*
 *= require_self
 *= require_tree .

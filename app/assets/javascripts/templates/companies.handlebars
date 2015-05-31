@@ -1,13 +1,15 @@
-<h2>Companies</h2>
-<ul>
-  {{#each}}
-    <li>{{#link-to 'company' this}}{{name}}{{/link-to}}</li>
-  {{/each}}
-</ul>
+<div class="container">
+  <h2>Companies</h2>
+    <ul>
+      {{#each}}
+        <li>{{#link-to 'company' this}}{{name}}{{/link-to}}</li>
+      {{/each}}
+    </ul>
 
-{{outlet}}
+    {{outlet}}
 
 
-{{#view 'Bh.CompanyView'}}
+    {{#view 'Bh.CompanyView'}}
 
-{{/view}}
+    {{/view}}
+</div>

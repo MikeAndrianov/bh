@@ -1,19 +1,32 @@
-<h2>Sign In</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h2>Sign In</h2>
+      {{#link-to 'posts' class='hidden'}}All Posts{{/link-to}}
+      <div class="row padding-bottom-top">
+        <div class="col-md-5">
+          {{#link-to 'vkontakte'}}<img src="assets/twitter.jpg" class="img-rounded">{{/link-to}}
+        </div>
+        <div class="col-md-5 col-md-offset-2">
+          {{#link-to 'vkontakte'}}<img src="assets/vk.png" class="img-rounded">{{/link-to}}
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <form class="col-md-12">
+          <div class="form-group">
+            <p>Email: <br/>
+            {{ input value=email class='form-control' }}</p>
+          </div>
 
-<div class="row">
-  <form class="col-md-4 col-lg-4">
-    <div class="form-group">
-      <p>Email: <br/>
-      {{ input value=email class='form-control' }}</p>
+          <div class="form-group">
+            <p>Password: <br/>
+            {{ input type='password' value=password class='form-control' }}</p>
+          </div>
+
+          <button class="btn btn-success" {{action "signIn"}}>Sign In</button>
+        </form>
+      </div>
     </div>
-
-    <div class="form-group">
-      <p>Password: <br/>
-      {{ input type='password' value=password class='form-control' }}</p>
-    </div>
-
-    <button class="btn btn-success" {{action "signIn"}}>Sign In</button>
-  </form>
+  </div>
 </div>
-
-{{#link-to 'posts'}}All Posts{{/link-to}}
